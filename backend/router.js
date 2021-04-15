@@ -16,6 +16,7 @@ module.exports = () => {
       ...req.body,
       tags: JSON.stringify(req.body.tags),
     });
+    res.end();
   });
 
   return router;

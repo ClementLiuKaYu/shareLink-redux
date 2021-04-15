@@ -30,6 +30,7 @@ export function loadLinkAction(list) {
 export const addLinkThunk = (link) => async (dispatch) => {
   try {
     await axios.post("http://localhost:8080/", link);
+    console.log("hihi");
     dispatch(addLinkAction(link));
   } catch (err) {
     console.log(err);

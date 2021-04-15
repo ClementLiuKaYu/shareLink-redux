@@ -16,7 +16,7 @@ const Main = (props) => {
   useEffect(() => {
     dispatch(loadLinkThunk());
     return () => {};
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="main">
@@ -40,13 +40,8 @@ const Main = (props) => {
                 return tag.includes(search.toLowerCase());
               });
           })
-          .map((link) => (
-            <LinkBox
-              key={link.id}
-              tags={link.tags}
-              url={link.url}
-              name={link.name}
-            />
+          .map((link, i) => (
+            <LinkBox key={i} tags={link.tags} url={link.url} name={link.name} />
           ))}
       </div>
     </div>
