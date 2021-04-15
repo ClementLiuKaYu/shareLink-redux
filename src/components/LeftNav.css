@@ -1,0 +1,12 @@
+.leftNav {
+	width: 20%;
+	max-width: 250px;
+	min-width: 200px;
+	height: 100vh;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #aaa;
+}

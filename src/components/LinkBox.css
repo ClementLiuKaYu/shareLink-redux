@@ -1,0 +1,23 @@
+.linkBox {
+	margin: 15px 0px 15px 0px;
+	padding: 5px;
+	background-color: #eeeeee;
+	border-radius: 10px;
+	/* border: solid black 1px; */
+	box-shadow: 3px 3px 3px 0px #bbbbbb;
+	max-width: 400px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: rgb(0, 255, 255);
+}
+
+h6 {
+	display: inline;
+}
+
+span {
+	margin: 5px;
+	margin-bottom: 0 !important;
+}
